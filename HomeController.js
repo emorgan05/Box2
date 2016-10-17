@@ -9,5 +9,6 @@ function HomeController($scope) {
   
   $scope.addSuggestion = function() {
     $scope.suggestions.push({text:$scope.formSuggestionText});
+    $scope.formSuggestionText = '';
   };
 }
