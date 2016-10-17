@@ -6,4 +6,8 @@ function HomeController($scope) {
     {text: 'End all the emails with a Laffy Taffy joke'},
     {text: 'Sing Living on a Prayer to start each meeting'}
     ];
+  
+  $scope.addSuggestion = function() {
+    $scope.suggestions.push({text:$scope.formSuggestionText});
+  };
 }
