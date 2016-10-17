@@ -1,5 +1,5 @@
 function HomeController($scope) {
-  $scope.totalToDos = 4;
+  $scope.totalSuggestions = 4;
   
   $scope.suggestions = [
     {text: 'Free pizza at club meetings'},
