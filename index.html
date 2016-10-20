@@ -16,7 +16,8 @@
 	  <h2>Total Suggestions: {{ getTotalSuggestions() }}</h2>
 	  <ul class="unstyled">
 		  <li ng-repeat="suggestion in suggestions">
-			  {{ suggestion.text }}<span class="glyphicon glyphicon-thumbs-up"></span>
+			  {{ suggestion.text }}
+			  <p>Upvote: <span class="glyphicon glyphicon-thumbs-up"></span></p>
 		  </li>
 	  </ul>
 	  <form class="form-horizontal">
