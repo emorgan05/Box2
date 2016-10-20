@@ -14,4 +14,8 @@ function HomeController($scope) {
   $scope.getTotalSuggestions = function() {
     return $scope.suggestions.length;
   };
+  
+  $scope.addUpvote = function() {
+     
+  };
 }
