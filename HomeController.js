@@ -11,5 +11,7 @@ function HomeController($scope) {
     $scope.formSuggestionText = "";
   };
   
-  $scope.totalSuggestions = $scope.suggestions.length;
+  $scope.getTotalSuggestions = function () {
+    return $scope.suggestions.length;
+  };
 }
