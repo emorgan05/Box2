@@ -1,5 +1,4 @@
-function HomeController($scope) {
-  $scope.totalSuggestions = 4;
+function HomeController($scope) { 
   
   $scope.suggestions = [
     {text: 'Free pizza at club meetings'},
@@ -11,4 +10,6 @@ function HomeController($scope) {
     $scope.suggestions.push({text:$scope.formSuggestionText});
     $scope.formSuggestionText = "";
   };
+  
+  $scope.totalSuggestions = $scope.suggestions.length;
 }
