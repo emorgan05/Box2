@@ -13,7 +13,7 @@ function HomeController($scope) {
     ];
   
   $scope.addSuggestion = function() {
-    $scope.suggestions.push({text:$scope.formSuggestionText});
+    $scope.suggestions.push({text:$scope.formSuggestionText, upvotes: 0});
     $scope.formSuggestionText = "";
   };
   
