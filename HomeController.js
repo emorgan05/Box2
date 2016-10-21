@@ -1,9 +1,15 @@
 function HomeController($scope) { 
   
   $scope.suggestions = [
-    {text: 'Free pizza at club meetings'},
-    {text: 'End all the emails with a Laffy Taffy joke'},
-    {text: 'Sing Living on a Prayer to start each meeting'}
+    {text: 'Free pizza at club meetings',
+    upvotes: 15
+    },
+    {text: 'End all the emails with a Laffy Taffy joke',
+    upvotes: 7
+    },
+    {text: 'Sing Living on a Prayer to start each meeting',
+    upvotes: 3
+    }
     ];
   
   $scope.addSuggestion = function() {
@@ -16,6 +22,6 @@ function HomeController($scope) {
   };
   
   $scope.addUpvote = function() {
-     
+     $scope.suggestions.upvotes += 1;
   };
 }
