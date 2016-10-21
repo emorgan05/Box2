@@ -15,7 +15,7 @@
   <div ng-controller="HomeController">
 	  <h2>Total Suggestions: {{ getTotalSuggestions() }}</h2>
 	  <ul class="unstyled">
-		  <li ng-repeat="suggestion in suggestions">
+		  <li ng-repeat="suggestion in suggestions | orderBy: '-upvotes'">
 			  {{ suggestion.text }}
 			  <button class="btn"><span class="glyphicon glyphicon-thumbs-up" ng-click="addUpvote($index)"> Upvote</span></button>
 			  <p>Total Upvotes: {{ suggestion.upvotes }}</p>
