@@ -22,6 +22,7 @@ function HomeController($scope) {
   };
   
   $scope.addUpvote = function(index) {
-     $scope.suggestions(index).upvotes += 1;
+     $scope.suggestions[index].upvotes += 1;
+    return {{ suggestion.upvote += 1 }};
   };
 }
