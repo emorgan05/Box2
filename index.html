@@ -18,6 +18,7 @@
 		  <li ng-repeat="suggestion in suggestions">
 			  {{ suggestion.text }}
 			  <p>Upvote: <span class="glyphicon glyphicon-thumbs-up" ng-click="addUpvote()"></span></p>
+			  <p>Total Upvotes: {{ suggestion.upvotes }}</p>
 		  </li>
 	  </ul>
 	  <form class="form-horizontal">
